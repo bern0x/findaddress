@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 public class FindAddress {
     public String findAddress(String cep) throws IOException, InterruptedException {
-        String enderecoApi = "https://www.viacep.com.br/ws/" + cep + "/json/";
+        String enderecoApi = "https://viacep.com.br/ws/" + cep + "/json/";
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
