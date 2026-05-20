@@ -4,7 +4,6 @@ public record Address(
         String cep,
         String logradouro,
         String complemento,
-        String unidade,
         String bairro,
         String localidade,
         String uf,
@@ -12,4 +11,16 @@ public record Address(
         String regiao,
         String ddd
 ) {
+    @Override
+    public String toString() {
+        return  "CEP: " + cep + "\n" +
+                "Logradouro: " + logradouro + "\n" +
+                "Complemento: " + complemento + "\n" +
+                "Bairro: " + bairro + "\n" +
+                "Localidade: " + localidade + "\n" +
+                "UF: " + uf + "\n" +
+                "Estado: " + estado + "\n" +
+                "Regiao: " + regiao + "\n" +
+                "DDD: " + ddd + "\n";
+    }
 }
