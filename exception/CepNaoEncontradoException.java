@@ -4,7 +4,7 @@ public class CepNaoEncontradoException extends RuntimeException {
 
     private String mensagem;
 
-    public CepNaoEncontradoException(String mensage) {
+    public CepNaoEncontradoException(String mensagem) {
         this.mensagem = mensagem;
         }
 

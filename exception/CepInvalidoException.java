@@ -8,7 +8,7 @@ public class CepInvalidoException extends RuntimeException {
         this.mensagem = mensage;
     }
 
-    public String getMessagem() {
+    public String getMessage() {
         return this.mensagem;
     }
 }
