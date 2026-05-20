@@ -6,8 +6,8 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class BuscaEndereco {
-    public String buscaEndereco(String cep) throws IOException, InterruptedException {
+public class FindAddress {
+    public String findAddress(String cep) throws IOException, InterruptedException {
         String enderecoApi = "https://www.viacep.com.br/ws/" + cep + "/json/";
 
         HttpClient client = HttpClient.newHttpClient();
